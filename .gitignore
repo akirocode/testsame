@@ -1,0 +1,15 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+/inst/script/*.html
+/inst/script/*_files
+/man/*
+## sparklyr
+derby.log
+log4j.spark.log
+log4j.spark.log.*
+## packrat
+packrat/lib*/
+/packrat/bundles
+packrat/src
