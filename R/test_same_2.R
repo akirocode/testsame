@@ -25,8 +25,8 @@ fake_expect <- function() expect_true(TRUE)
 expect_same <- function(.call, .name, record = FALSE) {
 	if (record) {
 		test_rec(.call = .call, .name = .name)
+		fake_expect()
 	} else {
 		test_run(.call = .call, .name = .name)
-		fake_expect()
 	}
 }
