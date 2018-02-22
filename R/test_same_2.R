@@ -15,6 +15,7 @@ test_rec <- function(.call, .name) {
 					, file = file.path(storage_folder(), .name))
 }
 
+fake_expect <- function() expect_true(TRUE)
 
 # public ------------------------------------------------------------------
 
@@ -23,5 +24,6 @@ expect_same <- function(.call, .name, record = FALSE) {
 		test_rec(.call = .call, .name = .name)
 	} else {
 		test_run(.call = .call, .name = .name)
+		fake_expect()
 	}
 }
