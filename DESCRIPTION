@@ -1,7 +1,7 @@
 Package: testsame
 Type: Package
 Title: Test the output is the same of before
-Version: 0.1.0
+Version: 0.1.1
 Author: Andrea Melloncelli
 Maintainer: Andrea Melloncelli <andrea.melloncelli@gmail.com>
 Description: Test the output is the same of before. In expect_same function,
